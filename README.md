@@ -22,6 +22,14 @@ PEP 8 -- Style Guide for Python Code.
 - [TensorFlow](https://www.tensorflow.org)
 - [Keras](https://keras.io)
 
+## Finding the right camera position
+Make sure to put the camera such that the 3 lanes of the road be visible most of the time.
+
+1. <strong>Autonomous drive mode:</strong> Real-time autopilot using Deep Learning models.
+2. <strong>Data recording:</strong> Real-time data recording from the car.
+3. <strong>Training mode:</strong> Build and train your own driving models from scratch or using transfer learning.
+4. <strong>Free ride:</strong> Enjoy driving your RC car on the free ride mode.
+
 
 ## Features
 
