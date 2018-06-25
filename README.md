@@ -20,7 +20,7 @@ It is normally easy to know when the camera is not in the right position. Here a
 
 
 ## Training the vehicle
-Once you found the right camera position, it is necessary to build your own dataset. We built one with approximately 60K images with labels veryfied by inspection. Taking the data directly from the car can add noise due contradictory examples and lack of syncronization, as we make mistakes or anticipate curves while driving. To avoid that, we took images directly from the car and we assigned the labels after using a script. Finally, all labels were manually inspected to assure its quality. The final dataset (2.9GB) including both IronCar and proper data is avaliable [here.](https://www.amazon.fr/Waveshare-Raspberry-Camera-Fisheye-Raspberry-pi/dp/B00RMV53Z2/
+Once you found the right camera position, it is necessary to build your own dataset. We built ours with approximately 60K images with labels veryfied by inspection. Taking the data directly from the car can add noise due contradictory examples and lack of syncronization, as we make mistakes or anticipate curves while driving. To avoid that, we took images directly from the car and we assigned the labels after using a script. Finally, all labels were manually inspected to assure its quality. The final dataset (2.9GB) including both IronCar and proper data is avaliable [here.](https://www.amazon.fr/Waveshare-Raspberry-Camera-Fisheye-Raspberry-pi/dp/B00RMV53Z2/)
 
 The images were labeled as following:
 ![alt text](https://github.com/Axionable/AxionautV2/blob/master/Docs/labels.png)
