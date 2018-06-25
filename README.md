@@ -53,7 +53,7 @@ The `python train.py` script allows to train a driving model using the aforement
 
 ### List of parameters:
 
-1. <strong>--augmentation:</strong> Use data augmentation functions, default = True.
+1. <strong>--augmentation:</strong> Use data augmentation functions, default True.
 2. <strong>--val_split:</strong> Validation split, default 0.2.
 3. <strong>--epochs:</strong> Number of training epochs, default 100.
 4. <strong>--batch_size:</strong> Size of batch, default 64 images.
