@@ -30,22 +30,12 @@ It is normally easy to know when the camera is not in the right position. Here a
 
 
 ## Training the vehicle
-Once you found the right camera position, it is necessary to build your own dataset. We built one with approximately 60K images with labels veryfied by inspection. Images were labeled as following:
+Once you found the right camera position, it is necessary to build your own dataset. We built one with approximately 60K images with labels veryfied by inspection. Taking the data directly from the car could have noise due contradictory examples, and lack of syncronization, as we make mistakes or anticipate curves while driving. To avoid that, we took images directly from the car and we assigned the labels after using a script. Finally, all labels were manually inspected to assure the quality of the data.
 
+Images were labeled as following:
+![alt text](https://github.com/Axionable/AxionautV2/blob/master/Docs/labels.png)
 
-
-
-
-
-Doing so, you are sure the labels respects the X of the data, your training and validation accuracy should increase importantly. If your data is well labeled, you should WWW
-
-
-A good way to see the global distribution of your data is the histogram. In the `data preparation.ipyn` jupyter notebook, you will find some code examples to balance your own dataset using [Pandas.](https://pandas.pydata.org)
-
-![alt text](https://github.com/Axionable/AxionautV2/blob/master/Docs/histograms.png)
-
-
-
+If the labels are consistent your training and validation accuracy should increase importantly. It is because the labels preserve the structure of your data. If you get that, then you are in a good path :)
 
 
 ## Data preparation
