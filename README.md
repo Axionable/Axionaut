@@ -36,6 +36,11 @@ A good way to see the global distribution of your data is the histogram. In the 
 ![alt text](https://github.com/Axionable/AxionautV2/blob/master/Docs/histograms.png)
 
 
+## The model
+The proposed architecture is a slightly modified version of the PilotNet published by [Nvidia](https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf). This model is powerfull enought to model all possible drive situations while simple enought to run on the raspberry pi 3. [Dropout](http://jmlr.org/papers/volume15/srivastava14a.old/srivastava14a.pdf) of 10% was added on two classifier layers to avoid [overfitting](https://en.wikipedia.org/wiki/Overfitting
+).
+
+
 
 ## Features
 
