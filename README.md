@@ -1,9 +1,9 @@
 ## AxionautV2 - DIY Robocar Tricks and Hacks
-The Axionaut is the winner of the second [IronCar France](http://ironcar.org) robocar competition. The following repository contains all the tips and tricks we used to win. The final Keras model achieves more than 98% of accuracy on the validation set. The provided autopilot model will work seameless with Vincent's [IronCar](https://github.com/vinzeebreak/ironcar) framework.
+The Axionaut is the winner of the second [IronCar France](http://ironcar.org) robocar competition. The following repository contains all the tips and tricks we used to win. The final Keras model achieves more than 98% of accuracy on the validation set. The provided autopilot model will work seamlessly with Vincent's [IronCar](https://github.com/vinzeebreak/ironcar) framework.
 
 
 ## Introduction
-The Axionaut is based on a 4x4 Radio Controlled (RC) monster truck chasis, the complete bill of materials is avaliable here:
+The Axionaut is based on a 4x4 Radio Controlled (RC) monster truck chassis, the complete bill of materials is available here:
 https://www.axionable.com/axionaut-termine-1er-de-la-deuxieme-course-iron-car/
 
 The following code and documentation will guide you through the best practices and tricks to train the car. All strategies were defined both searching on the Internet and by experimentation. So, are you ready to win your next race?
@@ -12,12 +12,12 @@ The following code and documentation will guide you through the best practices a
 ## Finding the right camera position
 Make sure to put the camera such that the three lanes are always visible. Also, crop the original image to keep only the track. The position and crop level depends on your vehicle and the camera you are using. In our case, the image was cropped to [90, 250, 3] and the camera was placed at 20cm from the floor. We recommend the use of [eyefish cameras.](https://www.amazon.fr/Waveshare-Raspberry-Camera-Fisheye-Raspberry-pi/dp/B00RMV53Z2/ref=pd_cp_23_3?_encoding=UTF8&psc=1&refRID=7JBTZQTNFRVC34PY6J4X)
 
-It is normally easy to know when the camera is not in the right position. Here an usefull example, make sure to check your training data before training your model. Once you found a good fit, fix the camera.
+It is normally easy to know when the camera is not in the right position. Here an useful example, make sure to check your training data before training your model. Once you found a good fit, fix the camera.
 ![alt text](https://github.com/Axionable/AxionautV2/blob/master/Docs/camera_adj.png)
 
 
 ## Training the vehicle
-Once you found the right camera position, it is necessary to build your own dataset. We built ours with approximately 60K images with labels veryfied by inspection. Taking the data directly from the car can add noise due contradictory examples and lack of syncronization, as we make mistakes or anticipate curves while driving. To avoid that, we took images directly from the car and we assigned the labels after using a script. Finally, all labels were manually inspected to assure its quality. The final dataset (2.9GB) including both IronCar track and proper data is avaliable [here.](https://www.amazon.fr/Waveshare-Raspberry-Camera-Fisheye-Raspberry-pi/dp/B00RMV53Z2/)
+Once you found the right camera position, it is necessary to build your own dataset. We built ours with approximately 60K images with labels verified by inspection. Taking the data directly from the car can add noise due contradictory examples and lack of synchronization, as we make mistakes or anticipate curves while driving. To avoid that, we took images directly from the car and we assigned the labels after using a script. Finally, all labels were manually inspected to assure its quality. The final dataset (2.9GB) including both IronCar track and proper data is avaliable [here.](https://www.amazon.fr/Waveshare-Raspberry-Camera-Fisheye-Raspberry-pi/dp/B00RMV53Z2/)
 
 The images were labeled as follows:
 ![alt text](https://github.com/Axionable/AxionautV2/blob/master/Docs/labels.png)
@@ -32,16 +32,15 @@ Augmenting your data is a good way to improve the generalisation capabilities of
 
 
 ## Data preparation
-Before training your model, it is necessary to balance the number of examples per class. Doing so, you will avoid biases, assuring a smooth driving behavior in almost all road conditions. In general, we try to preserve a 1:1 ratio between curves and straights examples, we also give less frequency to very hard turns. It is recommended to test the car after training a model with balanced data, see if it learned well to go straight, turn left and right. If there is a task it does not perform well, just add more data of that class and train again. After a few iterations your car will be ready to run on any track :).
+Before training your model, it is necessary to balance the number of examples per class. Doing so, you will avoid biases, ensuring a smooth driving behavior in almost all road conditions. In general, we try to preserve a 1:1 ratio between curves and straights examples, we also give less frequency to very hard turns. It is recommended to test the car after training a model with balanced data, see if it learned well to go straight, turn left and right. If there is a task it does not perform well, just add more data of that class and train again. After a few iterations your car will be ready to run on any track :).
 
 A good way to see the global distribution of your data is the histogram. In the `data preparation.ipyn` jupyter notebook, you will find some code examples to balance your own dataset using [Pandas.](https://pandas.pydata.org)
 
 ![alt text](https://github.com/Axionable/AxionautV2/blob/master/Docs/histograms.png)
 
 
-
 ## The model
-The proposed architecture is a slightly modified version of the PilotNet published by [Nvidia](https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf). This architectue is powerfull to modelise all possible driving situations while simple enough to run on the raspberry pi 3 B+. [Dropout](http://jmlr.org/papers/volume15/srivastava14a.old/srivastava14a.pdf) of 10% was added on two classifier layers to avoid [overfitting](https://en.wikipedia.org/wiki/Overfitting).
+The proposed architecture is a slightly modified version of the PilotNet published by [Nvidia](https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf). This architecture is powerful to modelize all possible driving situations while simple enough to run on the raspberry pi 3 B+. [Dropout](http://jmlr.org/papers/volume15/srivastava14a.old/srivastava14a.pdf) of 10% was added on two classifier layers to avoid [overfitting](https://en.wikipedia.org/wiki/Overfitting).
 
 
 ## Code Exemple
