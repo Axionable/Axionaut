@@ -44,13 +44,13 @@ The proposed architecture is a slightly modified version of the PilotNet publish
 
 ## Code Exemple
 
-The `python train.py` script allows to train a driving model using the aforementioned model and dataset. By default, the script will save the best model snapshot after each epoch if the validation loss decreased. Normally, the default settings works well, however you can freely modify the settings with the following examples:
+The `python train.py` script allows to train a driving model using the aforementioned model and dataset. By default, the script will save the best model snapshot after each epoch if the validation loss decreased. Normally, the default settings works well, however you can freely modify the settings according the following examples:
 
 <strong>Start training with default settings:</strong>
 `python train.py`
 
 
-###List of parameters:
+### List of parameters:
 
 1. <strong>--augmentation:</strong> Use data augmentation functions, default = True.
 2. <strong>--val_split:</strong> Validation split, default 0.2.
