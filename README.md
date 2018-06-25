@@ -1,4 +1,4 @@
-## AxionautV2 - DYI Robocar Tricks and Hacks
+## AxionautV2 - DIY Robocar Tricks and Hacks
 The Axionaut is the winner of the second [IronCar France](http://ironcar.org) robocar competition. The following repository contains all the tips and tricks we used to win. The provided autopilot model will work seameless with Vincent's [IronCar](https://github.com/vinzeebreak/ironcar) framework.
 
 
