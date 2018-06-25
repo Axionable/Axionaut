@@ -23,7 +23,7 @@ PEP 8 -- Style Guide for Python Code.
 - [Keras](https://keras.io)
 
 ## Finding the right camera position
-Make sure to put the camera such that the three lanes are always visible. Also, crop the original image to keep only the track. The position and crop level depends on your vehicle and the camera you are using. In our case the image was cropped to [90, 250, 3] and the camera was placed at 20 cm from the floor. We recommend to use [eyefish cameras.](https://www.amazon.fr/Waveshare-Raspberry-Camera-Fisheye-Raspberry-pi/dp/B00RMV53Z2/ref=pd_cp_23_3?_encoding=UTF8&psc=1&refRID=7JBTZQTNFRVC34PY6J4X)
+Make sure to put the camera such that the three lanes are always visible. Also, crop the original image to keep only the track. The position and crop level depends on your vehicle and the camera you are using. In our case the image was cropped to [90, 250, 3] and the camera was placed at 20 cm from the floor. We recommend the use of [eyefish cameras.](https://www.amazon.fr/Waveshare-Raspberry-Camera-Fisheye-Raspberry-pi/dp/B00RMV53Z2/ref=pd_cp_23_3?_encoding=UTF8&psc=1&refRID=7JBTZQTNFRVC34PY6J4X)
 
 It is normally easy to know when the camera is not in the right position. Here an usefull example, make sure to check your training data before training your model. Once you found a good fit, fix the camera.
 ![alt text](https://github.com/Axionable/AxionautV2/blob/master/Docs/camera_adj.png)
@@ -32,8 +32,9 @@ It is normally easy to know when the camera is not in the right position. Here a
 ## Data preparation
 Before training your model is necessary to balance the number of examples per class. Doing so, you will avoid biases assuring a smooth driving behaviour in almost all conditions. In general, we try to preserve a 1:1 ratio between curves and straights, we also give less frequency to very hard turns. It is recommended to test the car after training a model with the balanced data, see if it learned well to go straight, turn left and right. If there is a task it does not perform well, just add more data of that class and train again. After a few iterations your car will be ready to any track :).
 
-A good way to see the global distribution of your data is the histogram. 
-![alt text](https://github.com/Axionable/AxionautV2/blob/master/Docs/camera_adj.png)
+A good way to see the global distribution of your data is the histogram. In the `data preparation.ipyn` jupyter notebook, you will find some code examples to balance your own dataset using [Pandas.](https://pandas.pydata.org)
+
+![alt text](https://github.com/Axionable/AxionautV2/blob/master/Docs/histograms.png)
 
 
 
