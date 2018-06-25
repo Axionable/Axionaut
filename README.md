@@ -78,6 +78,8 @@ Feel free to explore and set your prefered training hyperparameters!
 <strong>Install required libraries:</strong>
 `pip install -r requirements.txt`
 
+<strong>Download the training dataset and put it in the Dataset folder:</strong>
+[Dataset](https://s3.amazonaws.com/axionautdataset/Datasets.zip)
 
 ## Contribute
 
