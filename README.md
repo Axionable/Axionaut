@@ -37,30 +37,8 @@ A good way to see the global distribution of your data is the histogram. In the 
 
 
 ## The model
-The proposed architecture is a slightly modified version of the PilotNet published by [Nvidia](https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf). This architectue is powerfull to modelise all possible drive situations while simple enough to run on the raspberry pi 3 B+. [Dropout](http://jmlr.org/papers/volume15/srivastava14a.old/srivastava14a.pdf) of 10% was added on two classifier layers to avoid [overfitting](https://en.wikipedia.org/wiki/Overfitting).
+The proposed architecture is a slightly modified version of the PilotNet published by [Nvidia](https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf). This architectue is powerfull to modelise all possible driving situations while simple enough to run on the raspberry pi 3 B+. [Dropout](http://jmlr.org/papers/volume15/srivastava14a.old/srivastava14a.pdf) of 10% was added on two classifier layers to avoid [overfitting](https://en.wikipedia.org/wiki/Overfitting).
 
-
-## API
-
-Create a new vehicle and set it to self-driving mode is extremely easy:
-
-	#Load self-driving pre trained model
-    model, graph = load_autopilot('autopilot.hdf5')
-
-    # Create Axionaut car with default settings
-    axionaut = vehicles.Axionaut()
-
-    # Configure PDW control commands as default
-    axionaut.commands = get_commands(path=None, default=True)
-
-    # Test camera position
-    axionaut.camera_test()
-
-    # Set vehicle to auto pilot mode 
-    axionaut.autopilot(model, graph)
-
-    # Start car   
-    axionaut.start()
 
 ## Code Exemple
 
