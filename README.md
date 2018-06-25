@@ -39,22 +39,29 @@ A good way to see the global distribution of your data is the histogram. In the 
 ## The model
 The proposed architecture is a slightly modified version of the PilotNet published by [Nvidia](https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf). This architectue is powerfull to modelise all possible driving situations while simple enough to run on the raspberry pi 3 B+. [Dropout](http://jmlr.org/papers/volume15/srivastava14a.old/srivastava14a.pdf) of 10% was added on two classifier layers to avoid [overfitting](https://en.wikipedia.org/wiki/Overfitting).
 
+![alt text](https://github.com/Axionable/AxionautV2/blob/master/Docs/histograms.png)
+
 
 ## Code Exemple
 
-The following commands are avaliable when using the main.py example:
+The `python train.py` script allows to train a driving model using the aforementioned model and dataset. By default, the script will save the best model snapshot after each epoch if the validation loss decreased. Normally, the default settings works well, however you can freely modify the settings with the following examples:
 
 <strong>Start training with default settings:</strong>
 `python train.py`
 
-<strong>Start on recording mode:</strong>
-`python main.py --mode record`
 
-<strong>Start on free ride mode:</strong>
-`python main.py --mode free`
+###List of parameters:
+
+1. <strong>--augmentation:</strong> Use data augmentation functions, default = True.
+2. <strong>--val_split:</strong> Validation split, default 0.2.
+3. <strong>--epochs:</strong> Number of training epochs, default 100.
+4. <strong>--batch_size:</strong> Size of batch, default 64 images.
+5. <strong>--early_stop:</strong> Use early stop, default True.
+6. <strong>--patience:</strong> Maximum number of epochs without loss improvement, default 5.
+
 
 <strong>To train your own driving model:</strong>
-`python main.py --mode train --architecture ConvNets --epochs 100 --batch_size 300 --optimizer Adam`
+`python train.py --augmentation True --epochs 10 --batch_size 128 --patience 5`
 
 Feel free to explore and set your prefered training hyperparameters!
 
