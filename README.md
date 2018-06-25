@@ -1,14 +1,11 @@
 ## AxionautV2 - DYI Robocar Tips and Tricks
-Axionaut V2 is the winner of the second [IronCar France](http://ironcar.org) robocar competition. The following repository contains all the tips and tricks we used to win. The provided autopilot model will work seameless with Vincent's [IronCar Framework](https://github.com/vinzeebreak/ironcar).
+The Axionaut is the winner of the second [IronCar France](http://ironcar.org) robocar competition. The following repository contains all the tips and tricks we used to win. The provided autopilot model will work seameless with Vincent's [IronCar](https://github.com/vinzeebreak/ironcar) framework.
 
 
 ## Introduction
-Axionaut provides a straightforward approach to prototype mini RC autonomous vehicles. 
-
-The complete bill of materials is avaliable here:
+The Axionaut is based on a 4x4 Radio Controlled (RC) monster truck chasis, the complete bill of materials is avaliable here:
 https://www.axionable.com/axionaut-termine-1er-de-la-deuxieme-course-iron-car/
-
-Axionaut is intended for rapid experimentation, use the built-in Deep Learning architectures and start driving!
+There is a lot of documentation on internet about how to win DIY robocar races. The following documentation will guide you through the best practices and tricks we found both searching and experimenting to win your next race!
 
 
 ## Code style
