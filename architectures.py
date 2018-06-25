@@ -1,5 +1,4 @@
 
-
 def model_categorical(input_size= (90,250,3), dropout=0.1):
     '''Generate an NVIDIA AutoPilot architecture.
 
@@ -42,3 +41,5 @@ def model_categorical(input_size= (90,250,3), dropout=0.1):
                   metrics=['accuracy'])
 
     return model
+
+
