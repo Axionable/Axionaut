@@ -6,7 +6,7 @@ The Axionaut is the winner of the second [IronCar France](http://ironcar.org) ro
 The Axionaut is based on a 4x4 Radio Controlled (RC) monster truck chasis, the complete bill of materials is avaliable here:
 https://www.axionable.com/axionaut-termine-1er-de-la-deuxieme-course-iron-car/
 
-The following code and documentation will guide you through the best practices and tricks to train the car. All strategies were defined both by searching on the Internet and experimention. So, are you ready to win your next race?
+The following code and documentation will guide you through the best practices and tricks to train the car. All strategies were defined both searching on the Internet and by experimention. So, are you ready to win your next race?
 
 ## Screenshot
 ![alt text](https://www.axionable.com/wp-content/uploads/2018/02/axionautV1.png)
