@@ -20,12 +20,12 @@ It is normally easy to know when the camera is not in the right position. Here a
 
 
 ## Training the vehicle
-Once you found the right camera position, it is necessary to build your own dataset. We built one with approximately 60K images with labels veryfied by inspection. Taking the data directly from the car can add noise due contradictory examples, and lack of syncronization, as we make mistakes or anticipate curves while driving. To avoid that, we took images directly from the car and we assigned the labels after using a script. Finally, all labels were manually inspected to assure the quality of the data.
+Once you found the right camera position, it is necessary to build your own dataset. We built one with approximately 60K images with labels veryfied by inspection. Taking the data directly from the car can add noise due contradictory examples and lack of syncronization, as we make mistakes or anticipate curves while driving. To avoid that, we took images directly from the car and we assigned the labels after using a script. Finally, all labels were manually inspected to assure its quality. The final dataset (2.9GB) including both IronCar and proper data is avaliable [here.](https://www.amazon.fr/Waveshare-Raspberry-Camera-Fisheye-Raspberry-pi/dp/B00RMV53Z2/
 
-Images were labeled as following:
+The images were labeled as following:
 ![alt text](https://github.com/Axionable/AxionautV2/blob/master/Docs/labels.png)
 
-If the labels are consistent your training and validation accuracy should increase importantly. It is because the labels preserve the structure of your data. If you get that, then you are in a good path :)
+If the labels are consistent, your training and validation accuracy should increase importantly. It is because the labels respect the inner structure of your data. If you get that, you are in a good path :)
 
 
 ## Data preparation
