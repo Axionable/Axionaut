@@ -29,7 +29,7 @@ If the labels are consistent, your training and validation accuracy should incre
 
 
 ## Data augmentation
-Augmenting your data is a good way to improve the generalisation capabilities of your model. There is a lot of information about this on internet. We took some functions and we added some more to easily allow you to generate new data. All functions are available in the`functions.py` script.
+Augmenting your data is a good way to improve the generalisation capabilities of your model. There is a lot of information about this on the Internet. We took some functions and we added some more to easily allow you to generate new data. All functions are available in the`functions.py` script.
 
 ![alt text](https://github.com/Axionable/AxionautV2/blob/master/Docs/augmentation.png)
 
