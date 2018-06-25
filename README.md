@@ -6,21 +6,11 @@ The Axionaut is the winner of the second [IronCar France](http://ironcar.org) ro
 The Axionaut is based on a 4x4 Radio Controlled (RC) monster truck chasis, the complete bill of materials is avaliable here:
 https://www.axionable.com/axionaut-termine-1er-de-la-deuxieme-course-iron-car/
 
-The following code and documentation will guide you through the best practices and tricks to train the car. All strategies were defined both searching on the Internet and by experimention. So, are you ready to win your next race?
+The following code and documentation will guide you through the best practices and tricks to train the car. All strategies were defined both searching on the Internet and by experimentation. So, are you ready to win your next race?
 
 ## Screenshot
 ![alt text](https://www.axionable.com/wp-content/uploads/2018/02/axionautV1.png)
 
-
-## Code style
-PEP 8 -- Style Guide for Python Code.
-
-
-## Tech/framework used
-
-<b>Built using:</b>
-- [TensorFlow](https://www.tensorflow.org)
-- [Keras](https://keras.io)
 
 ## Finding the right camera position
 Make sure to put the camera such that the three lanes are always visible. Also, crop the original image to keep only the track. The position and crop level depends on your vehicle and the camera you are using. In our case, the image was cropped to [90, 250, 3] and the camera was placed at 20cm from the floor. We recommend the use of [eyefish cameras.](https://www.amazon.fr/Waveshare-Raspberry-Camera-Fisheye-Raspberry-pi/dp/B00RMV53Z2/ref=pd_cp_23_3?_encoding=UTF8&psc=1&refRID=7JBTZQTNFRVC34PY6J4X)
