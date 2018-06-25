@@ -40,15 +40,6 @@ A good way to see the global distribution of your data is the histogram. In the 
 The proposed architecture is a slightly modified version of the PilotNet published by [Nvidia](https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf). This architectue is powerfull to modelise all possible drive situations while simple enough to run on the raspberry pi 3 B+. [Dropout](http://jmlr.org/papers/volume15/srivastava14a.old/srivastava14a.pdf) of 10% was added on two classifier layers to avoid [overfitting](https://en.wikipedia.org/wiki/Overfitting).
 
 
-
-## Features
-
-1. <strong>Autonomous drive mode:</strong> Real-time autopilot using Deep Learning models.
-2. <strong>Data recording:</strong> Real-time data recording from the car.
-3. <strong>Training mode:</strong> Build and train your own driving models from scratch or using transfer learning.
-4. <strong>Free ride:</strong> Enjoy driving your RC car on the free ride mode.
-
-
 ## API
 
 Create a new vehicle and set it to self-driving mode is extremely easy:
@@ -75,8 +66,8 @@ Create a new vehicle and set it to self-driving mode is extremely easy:
 
 The following commands are avaliable when using the main.py example:
 
-<strong>Start vehicle on self-driving mode:</strong>
-`python main.py --mode self_driving`
+<strong>Start training with default settings:</strong>
+`python train.py`
 
 <strong>Start on recording mode:</strong>
 `python main.py --mode record`
@@ -91,33 +82,17 @@ Feel free to explore and set your prefered training hyperparameters!
 
 
 ## Installation
-### Raspberry side:
-<strong>Clone repository to your Raspberry Pi:</strong>
-`git clone https://github.com/Axionable/AxionautV1`
 
-<strong>Install packages:</strong>
+<strong>Clone repository to your laptop:</strong>
+`git clone https://github.com/Axionable/AxionautV2`
+
+<strong>Install required libraries:</strong>
 `pip install -r requirements.txt`
 
-### Computer side:
-<strong>Clone repository to your laptop:</strong>
-`git clone https://github.com/Axionable/AxionautV1`
-
-<strong>Install packages:</strong>
-`pip install -r laptop_requirements.txt`
-
-
-## Status
-
-Axionaut is currently under active developement.
 
 ## Contribute
 
 Axionaut is totally free and open for everyone to use, please feel free to contribute!
-
-## Credits
-Special thanks to IronCar France and Vincent Houlbrèque's great repository:
-- [vinzeebreak/ironcar](https://github.com/vinzeebreak/ironcar)
-
 
 
 ## About Axionable
