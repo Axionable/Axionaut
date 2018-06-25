@@ -7,7 +7,7 @@ The Axionaut is based on a 4x4 Radio Controlled (RC) monster truck chasis, the c
 https://www.axionable.com/axionaut-termine-1er-de-la-deuxieme-course-iron-car/
 
 
-There is a lot of documentation on internet about how to win DIY robocar races. The following documentation will guide you through the best practices and tricks we found both searching and experimenting to win your next race!
+There is a lot of documentation on internet about how to win DIY robocar races. The following documentation will guide you through the best practices and tricks we found, both searching and experimenting. Be ready to win your next race!
 
 ## Screenshot
 ![alt text](https://www.axionable.com/wp-content/uploads/2018/02/axionautV1.png)
