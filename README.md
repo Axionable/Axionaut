@@ -25,7 +25,7 @@ PEP 8 -- Style Guide for Python Code.
 ## Finding the right camera position
 Make sure to put the camera such that the three lanes are always visible. Also, crop the original image to keep only the track. The position and crop level depends on your vehicle and the camera you are using. In our case the image was cropped to [90, 250, 3] and the camera was placed at 20 cm from the floor. We recommend to use [eyefish cameras.](https://www.amazon.fr/Waveshare-Raspberry-Camera-Fisheye-Raspberry-pi/dp/B00RMV53Z2/ref=pd_cp_23_3?_encoding=UTF8&psc=1&refRID=7JBTZQTNFRVC34PY6J4X)
 
-It is normally easy to know when your camera is not in the correct position. Here a usefull example, make sure to check your training data before training your model. Once you found a good fit, fix the camera.
+It is normally easy to know when the camera is not in the right position. Here a usefull example, make sure to check your training data before training your model. Once you found a good fit, fix the camera.
 ![alt text](https://github.com/Axionable/AxionautV2/blob/master/Docs/camera_adj.png)
 
 
