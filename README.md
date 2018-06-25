@@ -1,5 +1,5 @@
 ## AxionautV2 - DIY Robocar Tricks and Hacks
-The Axionaut is the winner of the second [IronCar France](http://ironcar.org) robocar competition. The following repository contains all the tips and tricks we used to win. The provided autopilot model will work seameless with Vincent's [IronCar](https://github.com/vinzeebreak/ironcar) framework.
+The Axionaut is the winner of the second [IronCar France](http://ironcar.org) robocar competition. The following repository contains all the tips and tricks we used to win. The final model achieves more than 98% of accuracy on the validation set. The provided autopilot model will work seameless with Vincent's [IronCar](https://github.com/vinzeebreak/ironcar) framework.
 
 
 ## Introduction
@@ -27,6 +27,24 @@ Make sure to put the camera such that the three lanes are always visible. Also, 
 
 It is normally easy to know when the camera is not in the right position. Here an usefull example, make sure to check your training data before training your model. Once you found a good fit, fix the camera.
 ![alt text](https://github.com/Axionable/AxionautV2/blob/master/Docs/camera_adj.png)
+
+
+## Training the vehicle
+Once you found the right camera position, it is necessary to build your own dataset. We built one with approximately 60K images with labels veryfied by inspection. 
+
+
+
+
+
+Doing so, you are sure the labels respects the X of the data, your training and validation accuracy should increase importantly. If your data is well labeled, you should WWW
+
+
+A good way to see the global distribution of your data is the histogram. In the `data preparation.ipyn` jupyter notebook, you will find some code examples to balance your own dataset using [Pandas.](https://pandas.pydata.org)
+
+![alt text](https://github.com/Axionable/AxionautV2/blob/master/Docs/histograms.png)
+
+
+
 
 
 ## Data preparation
