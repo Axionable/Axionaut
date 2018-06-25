@@ -1,0 +1,8 @@
+numpy
+opencv_python
+sklearn
+tqdm
+scikit-image
+keras==1.2.0
+h5py==2.7.0
+Pillow==5.1.0
