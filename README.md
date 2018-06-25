@@ -1,5 +1,6 @@
-## Axionaut - WORK IN PROGRESS
-Mini autonomous RC vehicle for AI enthusiasts.
+## AxionautV2 - DYI Robocar Tips and Tricks
+Axionaut V2 is the winner of the second [IronCar France](http://ironcar.org) robocar competition. The following repository contains all the tips and tricks we used to win. The provided autopilot model will work seameless with Vincent's [IronCar Framework](https://github.com/vinzeebreak/ironcar).
+
 
 ## Introduction
 Axionaut provides a straightforward approach to prototype mini RC autonomous vehicles. 
