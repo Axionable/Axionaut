@@ -30,7 +30,7 @@ It is normally easy to know when the camera is not in the right position. Here a
 
 
 ## Data preparation
-Before training your model is necessary to balance the number of examples per class. Doing so, you will avoid biases assuring a smooth driving behaviour in almost all conditions. In general, we try to preserve a 1:1 ratio between curves and straights, we also give less frequency to very hard turns. It is recommended to test the car after training a model with the balanced data, see if it learned well to go straight, turn left and right. If there is a task it does not perform well, just add more data of that class and train again. After a few iterations your car will be ready to any track :).
+Before training your model, it is necessary to balance the number of examples per class. Doing so, you will avoid biases assuring a smooth driving behavior in almost all road conditions. In general, we try to preserve a 1:1 ratio between curves and straights examples, we also give less frequency to very hard turns. It is recommended to test the car after training a model with balanced data, see if it learned well to go straight, turn left and right. If there is a task it does not perform well, just add more data of that class and train again. After a few iterations your car will be ready to run on any track :).
 
 A good way to see the global distribution of your data is the histogram. In the `data preparation.ipyn` jupyter notebook, you will find some code examples to balance your own dataset using [Pandas.](https://pandas.pydata.org)
 
