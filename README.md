@@ -30,7 +30,8 @@ It is normally easy to know when the camera is not in the right position. Here a
 
 
 ## Training the vehicle
-Once you found the right camera position, it is necessary to build your own dataset. We built one with approximately 60K images with labels veryfied by inspection. 
+Once you found the right camera position, it is necessary to build your own dataset. We built one with approximately 60K images with labels veryfied by inspection. Images were labeled as following:
+
 
 
 
