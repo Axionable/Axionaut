@@ -64,6 +64,9 @@ The `python train.py` script allows to train a driving model using the aforement
 <strong>To train your own driving model:</strong>
 `python train.py --augmentation True --epochs 10 --batch_size 128 --patience 5`
 
+The snapshot model is saved in the `Models/checkpoint_model.hdf5`.
+The final model is stored in the current folder as `final_model.hdf5`.
+
 Feel free to explore and set your prefered training hyperparameters!
 
 
