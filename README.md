@@ -23,10 +23,10 @@ PEP 8 -- Style Guide for Python Code.
 - [Keras](https://keras.io)
 
 ## Finding the right camera position
-Make sure to put the camera such that the 3 lanes of the road be visible most of the time. Also, make sure to crop the original image to keep only the track. The position and crop level depends on your car and the camera you are using. In our case the image was cropped to [90, 250, 3]. We recommend to use [eyefish](https://www.amazon.fr/Waveshare-Raspberry-Camera-Fisheye-Raspberry-pi/dp/B00RMV53Z2/ref=pd_cp_23_3?_encoding=UTF8&psc=1&refRID=7JBTZQTNFRVC34PY6J4X) cameras.
+Make sure to put the camera such that the three lanes are always visible. Also, crop the original image to keep only the track. The position and crop level depends on your vehicle and the camera you are using. In our case the image was cropped to [90, 250, 3] and is placed at 20 cm from the floor. We recommend to use [eyefish](https://www.amazon.fr/Waveshare-Raspberry-Camera-Fisheye-Raspberry-pi/dp/B00RMV53Z2/ref=pd_cp_23_3?_encoding=UTF8&psc=1&refRID=7JBTZQTNFRVC34PY6J4X) cameras.
 
-It is normally easy to know when your camera is not in the correct position. Check your training data.
-![alt text](https://www.axionable.com/wp-content/uploads/2018/02/axionautV1.png)
+It is normally easy to know when your camera is not in the correct position. Here a usefull example, make sure your check your training data before training your model.
+![alt text](https://github.com/Axionable/AxionautV2/blob/master/Docs/camera_adj.png)
 
 
 
