@@ -1,4 +1,4 @@
-## 22 SEPT 2018: Update! last winning solution:
+## 22 SEPT 2018: Update! last winning solution
 1. <strong>new_training.py</strong> Last script for model training using transfer learning. NOTE: You need at least 16Gb of RAM to run this code.
 2. <strong>Datasets</strong> Updated dataset with new labeled data. Download from https://s3.amazonaws.com/axionautdataset/Datasets+2.zip
 
