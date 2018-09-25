@@ -78,7 +78,7 @@ Feel free to explore and set your prefered training hyperparameters!
 ## Installation
 
 <strong>Clone repository to your laptop:</strong>
-`git clone https://github.com/Axionable/AxionautV2`
+`git clone https://github.com/Axionable/Axionaut`
 
 <strong>Install required libraries:</strong>
 `pip install -r requirements.txt`
