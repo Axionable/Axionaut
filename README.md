@@ -1,6 +1,10 @@
 ## AxionautV2 - DIY Robocar Tricks and Hacks
 The Axionaut is the winner of the second [IronCar France](http://ironcar.org) robocar competition. The following repository contains all the tricks we used to win. The final Keras model achieves more than 98% of accuracy on the validation set. The provided autopilot model will work seamlessly with Vincent's [IronCar](https://github.com/vinzeebreak/ironcar) framework.
 
+# 22 SEPT 2018: Update! last winning solution:
+1. <strong>--new_training.py</strong> Last script for training using transfer learning. NOTE: You need at least 16Gb of RAM to run this code.
+2. <strong>--Datasets</strong> Updated dataset with new labeled data. Download from https://s3.amazonaws.com/axionautdataset/Datasets+2.zip
+
 
 ## Introduction
 The Axionaut is based on a 4x4 Radio Controlled (RC) monster truck chassis, the complete bill of materials is available here:
