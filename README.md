@@ -1,6 +1,6 @@
 ## 22 SEPT 2018: Update! Last winning solution
 1. <strong>new_training.py</strong> Last script for model training using transfer learning. NOTE: You need at least 16Gb of RAM to run this code.
-2. <strong>Datasets</strong> Updated dataset with new labeled data. Download from https://s3.amazonaws.com/axionautdataset/Datasets+2.zip
+2. <strong>Datasets</strong> Updated dataset with new labeled data. Download from: https://s3.amazonaws.com/axionautdataset/Datasets+2.zip
 
 
 ## AxionautV2 - DIY Robocar Tricks and Hacks
